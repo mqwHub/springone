@@ -9,13 +9,11 @@
 </script>
 </head>
 <body>
-<center>
         <h3>Login</h3>
-        <form action="login" method="post">
-            <input type="text" name="userName" label="Enter User Name" />
-            <input type="text" name="password" label="Enter Password" />
-            <input type="submit" label="Login" />
+        <form action="login.action" method="post">
+            <input type="text" name="userName"/>
+            <input type="text" name="password"/>
+            <input type="submit"/>
         </form>
-    </center>
 </body>
 </html>

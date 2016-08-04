@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+<struts>
+    <package name="springone" extends="struts-default">
+         
+        <action name="login" class="com.springone.action.LoginAction"
+                method="login">
+            <result name="success">/WEB-INF/jsp/welcome.jsp</result>
+            <result name="input">/WEB-INF/jsp/login.jsp</result>
+        </action>
+ 
+        <action name="logout" class="com.springone.action.LoginAction"
+                method="logout">
+            <result name="success">/WEB-INF/jsp/login.jsp</result>
+        </action>
+         
+    </package>
+</struts>
